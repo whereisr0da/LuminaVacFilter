@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="security">
+      <UniqueIdentifier>{f322cf31-f224-4856-9900-67e1bd7d44b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="minhook">
+      <UniqueIdentifier>{59ef98df-cb8f-4951-8531-70e60a207237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="minhook\hde">
+      <UniqueIdentifier>{4248a3ec-209d-4e53-aea0-c7cfcbd76d92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="security\eraser.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\hash.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\instr.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\lazy.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\xorstr.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="context.h" />
+    <ClInclude Include="hooks.h" />
+    <ClInclude Include="structs.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="minhook\src\buffer.h">
+      <Filter>minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\trampoline.h">
+      <Filter>minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\hde32.h">
+      <Filter>minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\hde64.h">
+      <Filter>minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\pstdint.h">
+      <Filter>minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\table32.h">
+      <Filter>minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\table64.h">
+      <Filter>minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="security\obfu.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="context.cpp" />
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde32.c">
+      <Filter>minhook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>minhook\hde</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
